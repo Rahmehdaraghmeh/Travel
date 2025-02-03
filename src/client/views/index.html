@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Travely App</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <h1 class="holder headline">
+        Travely App
+      </h1>
+      <section class="interaction">
+        <div class="form" id="form">
+          <label for="zip">Enter City</label>
+          <input type="text" id="zip" placeholder="New York" />
+          <label for="date">Enter Date</label>
+          <input type="text" id="date" placeholder="YYYY-MM-DD" />
+          <button id="generate" type="submit">Generate</button>
+        </div>
+        <div id="entryHolder">
+          <h2 class="title" id="title">Your Next Trip</h2>
+        </div>
+      </section>
+    </div>
+    <script>
+      // Check that service workers are supported
+      if ("serviceWorker" in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script>
+  </body>
+</html>
