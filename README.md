@@ -26,11 +26,4 @@ Clone this repository and install the necessary dependencies:
 git clone <repository-url>
 cd <project-directory>
 npm install
-###Technologies Used
-Webpack: Bundles and serves assets, scripts, and styles.
-Babel: JavaScript transpiler to support ES6+ features.
-Sass: Preprocessing CSS for modular styles.
-Axios: HTTP client for fetching data from APIs.
-GeoNames API: Provides location data, such as coordinates and place names.
-WeatherBit API: Fetches weather data for the specified locations.
-Pixabay API: Supplies images related to user-selected locations.
+
